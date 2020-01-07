@@ -2,7 +2,6 @@ import re
 
 p = re.compile('[LVM]')
 q = re.compile('[L]{2,5}')
-count, L_count = 0, 0
 
 with open("sample.txt") as f:#읽기 모드로 텍스트 파일 불러옴
     lines = f.readlines()
@@ -23,8 +22,6 @@ for i in lines: #5 종류의 문자로 이루어진 라인들로 리스트 형�
 
 for i in lines: #최종결과출력
     print(i)
-
-
 
 for i in lines:
     st = [m.start() for m in re.finditer('L',i)] #L이 몇번 위치에 있는지 반환하는 코드
