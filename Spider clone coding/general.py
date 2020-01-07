@@ -10,8 +10,8 @@ create_project_dir('gomyo')
 
 # 큐 생성, 크롤링 (없는 자료일 경우)
 def create_data_files(project_name, base_url):
-    queue = project_name + '/queue.txt'
-    crawled = project_name + '/crawled.txt'
+    queue = os.path.join(project_name, 'queue.txt')
+    crawled = os.path.join(project_name, 'crawled.txt')
     if not os.path.isfile(queue):
         write_file(queue, base_url)
     if not os.path.isfile(crawled):
