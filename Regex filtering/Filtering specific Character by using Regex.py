@@ -2,7 +2,6 @@ import re
 
 p = re.compile('[LVM]')
 q = re.compile('[L]{2,5}')
-result = []
 count, L_count = 0, 0
 
 with open("sample.txt") as f:#읽기 모드로 텍스트 파일 불러옴
