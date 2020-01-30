@@ -11,6 +11,3 @@ for x in range(P):
     if a >= maxP:
         print(count)
         break
-
-
-    
