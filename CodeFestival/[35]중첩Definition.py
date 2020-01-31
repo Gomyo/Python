@@ -5,4 +5,4 @@ def one(n):
     return two
     
 a = one(2)
-print(a(10))
+print(a(20))
