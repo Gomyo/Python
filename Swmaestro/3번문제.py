@@ -9,13 +9,6 @@ def solution(n,k,arr):
     result = 0
     while k > 1:
         for x in range(n):
-            if max(arr[:x])-min(arr[:x]) <= max(arr[x:]) - min(arr[:x]):
-                continue
-            elif max(arr[:x])-min(arr[:x]) > max(arr[x:]) - min(arr[:x]):
-                result += max(arr[x:]) - min(arr[:x])
-            if k == 1:
-                result += max(arr[:x])-min(arr[:x])
-        k -= 1
-    return result
+            
 
 print(solution(n,k,arr))
